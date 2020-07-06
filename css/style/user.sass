@@ -1,0 +1,1293 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap')
+
+body
+  font-family: 'Raleway'
+
+/* The Modal (background) */
+.modal
+  display: none
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.4)
+
+/* Modal Content/Box */
+.modal-content 
+  background-color: #fefefe
+  margin: 15% auto
+  padding: 20px
+  border: 1px solid #888
+  width: 60%
+
+/* The Close Button */
+.close 
+  color: #aaa
+  float: right
+  font-size: 28px
+  font-weight: bold
+
+.close:hover,
+.close:focus 
+  color: black
+  text-decoration: none
+  cursor: pointer
+
+.modal-limit
+  width: 50%
+  margin: 0 auto
+
+.tweet-modal_reply input
+  width: 100%
+
+.suggestions
+  margin-top: 20px
+
+#textArea
+  width: 391px
+  height: 73px
+  margin-left: -13px
+  border: none
+
+#btnTwt
+  float: right
+
+#star
+  -webkit-filter: hue-rotate(180deg)
+  filter: hue-rotate(180deg)
+  float: right
+
+.roundedImage
+  margin-left: 1em 
+  margin-top: 1em 
+  overflow:hidden
+  -webkit-border-radius:50px
+  -moz-border-radius:50px
+  border-radius:50px
+  width:60px
+  height:60px
+
+#theme-blue
+  background-color: blue
+  border-radius: 10%
+
+#theme-green
+  background-color: green
+  
+#theme-purple
+  background-color: purple
+
+#theme-firebrick
+  background-color: firebrick
+
+@media (min-width: 400px) and (max-width: 549px)
+  .sm-hide
+    display: none
+
+  .li-tweet
+    fill: #1EAEDB 
+
+  .fixed
+    position: fixed
+    
+  a
+    cursor: pointer
+
+  .user
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+  .user--banner
+    height: 15em
+    overflow: hidden
+
+  .user--banner img
+    position: relative
+    width: 100%
+
+  .user--info
+    height: 30em
+    & h2
+      margin: 0px
+      padding: 0px
+      display: inline
+
+    &__profil_img 
+      height: 7em
+      width: 7em
+      overflow: hidden
+      border: 0.5em solid white
+      transform: translate(1em,-7em)
+      border-radius: 50%
+
+    &__profil
+      transform: translateY(-10rem)
+      padding-left: 1em
+
+    &__button
+      transform: translateY(-10em)
+      padding-right: 1.5em 
+      float: right
+
+      & button
+        border-color: #1EAEDB
+        color: #1EAEDB
+
+  .certified
+    fill: rgba(29,161,242,1.00)
+    height: 2.2rem
+
+    &-sm
+      fill: rgba(29,161,242,1.00)
+      height: 1.4rem
+      transform: translateY(0.2rem)
+
+
+  #profil_img
+    height: 100%
+
+  .bio
+    margin-top: 1rem
+
+  .link p
+    margin: 0px
+    padding: 0px
+    color: grey
+
+  .link a
+    text-decoration: none
+
+  .follow-data 
+    padding-top: 1rem
+    & a 
+      color: black
+      text-decoration: none
+      &:hover
+        color: black
+        text-decoration: underline
+
+  .following
+    display: inline
+    margin-right: 1rem
+
+  .followers
+    display: inline
+
+  .feedtabs
+    border-bottom: 1px solid rgb(219, 219, 219)
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+
+  .feedtabs a
+    text-decoration: none
+    color: grey
+
+  .feedtabs div
+    text-align: center
+    vertical-align: middle
+    padding-bottom: 8px
+    padding-top: 8px
+
+  .selected
+    border-bottom: 4px solid #1EAEDB
+    
+  .selected a  
+    color: #1EAEDB
+
+  .tweet__profil_image 
+    margin-top: 1.2rem
+    margin-left: 1.2rem
+
+  .tweet__profil_image  img
+    width: 58px
+    height: 58px
+    border-radius: 50%
+
+  .tweet__info div
+    padding-top: 10px
+    display: inline-block
+
+  .tweet__info_name
+    font-size: 1.8rem
+
+  .tweet__info_username
+    color: grey
+
+  .tweet__message
+    transform: translateY(-2rem)
+    width: 100%
+
+    & p
+      overflow: auto
+      padding-right: 1.5em
+
+  .tweet__opt
+    transform: translateY(-2rem)
+    color: grey
+
+  .tweet__opt span
+    padding-left: 0.5em
+
+  .logo-opt
+    fill: grey
+    justify-content: center
+    height: 2rem
+    // transform: translateY(0.5rem)
+
+  .pinned_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .pinned_msg
+    color: rgb(101, 119, 134)
+
+  .retweet_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .retweet_msg
+    color: rgb(101, 119, 134)
+    
+  .logo
+    &-pin
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+    &-rt
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+  .tweet
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+    border-bottom: 1px solid rgb(219, 219, 219)
+
+  .menu
+    padding-top: 2rem
+    & h2
+      color: #1EAEDB
+
+  .menu a
+    text-decoration: none
+    color: black
+    &:hover
+      color: black
+
+
+  .menu li
+    list-style-type: none
+    font-weight: bold
+    font-size: 2rem
+    color: black
+
+
+    &:hover
+      cursor: pointer
+      transform: scale(1.3)
+      transition-timing-function: ease-out
+      transition-duration: 0.2s
+
+    & img
+      height: 2.5rem
+      width: 2.5rem
+      border-radius: 50%
+      transform: translateY(0.5rem)
+      margin-right: 1rem
+
+  .logo-menu
+    margin-right: 1rem
+    height: 2.5rem
+    transform: translateY(0.5rem)
+
+  .menu span
+    visibility: hidden
+
+  .search-col
+    display: none
+
+  .three.columns.test
+    width: 8% !important 
+
+  .three.columns.sea
+    width: 0% !important
+
+  .six.columns
+    width: 90% !important 
+
+  .btn-tweeter
+    display: none
+
+  .tweet-part
+    padding-left: 10rem
+    transform: translateY(-7rem)
+    // font-size: 13px
+
+  .tweet__opt a
+    color: rgb(101, 119, 134)
+
+  .tendances
+    margin-top: 90px
+
+@media (min-width: 550px) and (max-width: 799px)
+  .sm-hide
+    display: none
+
+  .li-tweet
+    fill: #1EAEDB 
+
+  .fixed
+    position: fixed
+    
+  a
+    cursor: pointer
+
+  .user
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+  .user--banner
+    height: 15em
+    overflow: hidden
+
+  .user--banner img
+    position: relative
+    width: 100%
+
+  .user--info
+    height: 30em
+    & h2
+      margin: 0px
+      padding: 0px
+      display: inline
+
+    &__profil_img 
+      height: 7em
+      width: 7em
+      overflow: hidden
+      border: 0.5em solid white
+      transform: translate(1em,-7em)
+      border-radius: 50%
+
+    &__profil
+      transform: translateY(-10rem)
+      padding-left: 1em
+
+    &__button
+      transform: translateY(-10em)
+      padding-right: 1.5em 
+      float: right
+
+      & button
+        border-color: #1EAEDB
+        color: #1EAEDB
+
+  .certified
+    fill: rgba(29,161,242,1.00)
+    height: 2.2rem
+
+    &-sm
+      fill: rgba(29,161,242,1.00)
+      height: 1.4rem
+      transform: translateY(0.2rem)
+
+
+  #profil_img
+    height: 100%
+
+  .bio
+    margin-top: 1rem
+
+  .link p
+    margin: 0px
+    padding: 0px
+    color: grey
+
+  .link a
+    text-decoration: none
+
+  .follow-data 
+    padding-top: 1rem
+    & a 
+      color: green
+      text-decoration: none
+      &:hover
+        color: black
+        text-decoration: underline
+
+  .following
+    display: inline
+    margin-right: 1rem
+
+  .followers
+    display: inline
+
+  .feedtabs
+    border-bottom: 1px solid rgb(219, 219, 219)
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+
+  .feedtabs a
+    text-decoration: none
+    color: grey
+
+  .feedtabs div
+    text-align: center
+    vertical-align: middle
+    padding-bottom: 15px
+
+  .selected
+    border-bottom: 4px solid #1EAEDB
+    
+  .selected a  
+    color: #1EAEDB
+
+  .tweet__profil_image 
+    margin-top: 1.2rem
+    margin-left: 1.2rem
+
+  .tweet__profil_image  img
+    width: 58px
+    height: 58px
+    border-radius: 50%
+
+  .tweet__info div
+    padding-top: 10px
+    display: inline-block
+
+  .tweet__info_name
+    font-size: 1.8rem
+
+  .tweet__info_username
+    color: grey
+
+  .tweet__message
+    transform: translateY(-2rem)
+    width: 100%
+
+    & p
+      overflow: auto
+      padding-right: 1.5em
+
+  .tweet__opt
+    transform: translateY(-2rem)
+    color: grey
+
+  .tweet__opt span
+    padding-left: 0.5em
+
+  .logo-opt
+    fill: grey
+    justify-content: center
+    height: 2rem
+    transform: translateY(0.5rem)
+
+  .pinned_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .pinned_msg
+    color: rgb(101, 119, 134)
+
+  .retweet_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .retweet_msg
+    color: rgb(101, 119, 134)
+    
+  .logo
+    &-pin
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+    &-rt
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+  .tweet
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+    border-bottom: 1px solid rgb(219, 219, 219)
+
+  .menu
+    padding-top: 2rem
+    & h2
+      color: #1EAEDB
+
+  .menu a
+    text-decoration: none
+    color: black
+    &:hover
+      color: black
+
+
+  .menu li
+    list-style-type: none
+    font-weight: bold
+    font-size: 2rem
+    color: black
+
+
+    &:hover
+      cursor: pointer
+      transform: scale(1.3)
+      transition-timing-function: ease-out
+      transition-duration: 0.2s
+
+    & img
+      height: 2.5rem
+      width: 2.5rem
+      border-radius: 50%
+      transform: translateY(0.5rem)
+      margin-right: 1rem
+
+  .logo-menu
+    margin-right: 1rem
+    height: 2.5rem
+    transform: translateY(0.5rem)
+
+  .menu span
+    visibility: hidden
+
+  .three.columns.test
+    width: 8% !important 
+
+  .three.columns.sea
+    width: 0% !important
+
+  .six.columns
+    width: 90% !important 
+
+  .btn-tweeter
+    display: none
+
+  .search-col
+    display: none
+
+  .tweet-part
+    padding-left: 2.5rem
+
+  .tweet__opt a
+    color: rgb(101, 119, 134)
+
+  .tendances
+    margin-top: 90px
+
+@media (min-width: 800px) and (max-width: 999px)
+  .sm-hide
+    display: none
+
+  .li-tweet
+    fill: #1EAEDB 
+
+  .fixed
+    position: fixed
+    
+  a
+    cursor: pointer
+
+  .user
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+  .user--banner
+    height: 15em
+    overflow: hidden
+
+  .user--banner img
+    position: relative
+    width: 100%
+
+  .user--info
+    height: 30em
+    & h2
+      margin: 0px
+      padding: 0px
+      display: inline
+
+    &__profil_img 
+      height: 7em
+      width: 7em
+      overflow: hidden
+      border: 0.5em solid white
+      transform: translate(1em,-7em)
+      border-radius: 50%
+
+    &__profil
+      transform: translateY(-10rem)
+      padding-left: 1em
+
+    &__button
+      transform: translateY(-10em)
+      padding-right: 1.5em 
+      float: right
+
+      & button
+        border-color: #1EAEDB
+        color: #1EAEDB
+
+  .certified
+    fill: rgba(29,161,242,1.00)
+    height: 2.2rem
+
+    &-sm
+      fill: rgba(29,161,242,1.00)
+      height: 1.4rem
+      transform: translateY(0.2rem)
+
+
+  #profil_img
+    height: 100%
+
+  .bio
+    margin-top: 1rem
+
+  .link p
+    margin: 0px
+    padding: 0px
+    color: grey
+
+  .link a
+    text-decoration: none
+
+  .follow-data 
+    padding-top: 1rem
+    & a 
+      color: black
+      text-decoration: none
+      &:hover
+        color: black
+        text-decoration: underline
+
+  .following
+    display: inline
+    margin-right: 1rem
+
+  .followers
+    display: inline
+
+  .feedtabs
+    border-bottom: 1px solid rgb(219, 219, 219)
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+
+  .feedtabs a
+    text-decoration: none
+    color: grey
+
+  .feedtabs div
+    text-align: center
+    vertical-align: middle
+    padding-bottom: 15px
+
+  .selected
+    border-bottom: 4px solid #1EAEDB
+    
+  .selected a  
+    color: #1EAEDB
+
+  .tweet__profil_image 
+    margin-top: 1.2rem
+    margin-left: 1.2rem
+
+  .tweet__profil_image  img
+    width: 58px
+    height: 58px
+    border-radius: 50%
+
+  .tweet__info div
+    padding-top: 10px
+    display: inline-block
+
+  .tweet__info_name
+    font-size: 1.8rem
+
+  .tweet__info_username
+    color: grey
+
+  .tweet__message
+    transform: translateY(-2rem)
+    width: 100%
+
+    & p
+      overflow: auto
+      padding-right: 1.5em
+
+  .tweet__opt
+    transform: translateY(-2rem)
+    color: grey
+
+  .tweet__opt span
+    padding-left: 0.5em
+
+  .logo-opt
+    fill: grey
+    justify-content: center
+    height: 2rem
+    transform: translateY(0.5rem)
+
+  .pinned_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .pinned_msg
+    color: rgb(101, 119, 134)
+
+  .retweet_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .retweet_msg
+    color: rgb(101, 119, 134)
+    
+  .logo
+    &-pin
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+    &-rt
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+  .tweet
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+    border-bottom: 1px solid rgb(219, 219, 219)
+
+  .menu
+    padding-top: 2rem
+    & h2
+      color: #1EAEDB
+
+  .menu a
+    text-decoration: none
+    color: black
+    &:hover
+      color: black
+
+
+  .menu li
+    list-style-type: none
+    font-weight: bold
+    font-size: 2rem
+    color: black
+
+
+    &:hover
+      cursor: pointer
+      transform: scale(1.3)
+      transition-timing-function: ease-out
+      transition-duration: 0.2s
+
+    & img
+      height: 2.5rem
+      width: 2.5rem
+      border-radius: 50%
+      transform: translateY(0.5rem)
+      margin-right: 1rem
+
+  .logo-menu
+    margin-right: 1rem
+    height: 2.5rem
+    transform: translateY(0.5rem)
+
+  .menu span
+    visibility: hidden
+
+  .three.columns.test
+    width: 8% !important 
+
+  .three.columns.sea
+    width: 18% !important
+
+  .six.columns
+    width: 60% !important 
+
+  .btn-tweeter
+    display: none
+
+  .tweet-part
+    padding-left: 1.2rem
+
+  .tweet__opt a
+    color: rgb(101, 119, 134) 
+      
+  .tendances
+    margin-top: 90px
+
+@media (min-width: 1000px) and (max-width: 1199px) 
+  .sm-hide
+    display: none
+
+  .li-tweet
+    fill: #1EAEDB 
+
+  .fixed
+    position: fixed
+    
+  a
+    cursor: pointer
+
+  .user
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+  .user--banner
+    height: 15em
+    overflow: hidden
+
+  .user--banner img
+    position: relative
+    width: 100%
+
+  .user--info
+    height: 30em
+    & h2
+      margin: 0px
+      padding: 0px
+      display: inline
+
+    &__profil_img 
+      height: 7em
+      width: 7em
+      overflow: hidden
+      border: 0.5em solid white
+      transform: translate(1em,-7em)
+      border-radius: 50%
+
+    &__profil
+      transform: translateY(-10rem)
+      padding-left: 1em
+
+    &__button
+      transform: translateY(-10em)
+      padding-right: 1.5em 
+      float: right
+
+      & button
+        border-color: #1EAEDB
+        color: #1EAEDB
+
+  .certified
+    fill: rgba(29,161,242,1.00)
+    height: 2.2rem
+
+    &-sm
+      fill: rgba(29,161,242,1.00)
+      height: 1.4rem
+      transform: translateY(0.2rem)
+
+
+  #profil_img
+    height: 100%
+
+  .bio
+    margin-top: 1rem
+
+  .link p
+    margin: 0px
+    padding: 0px
+    color: grey
+
+  .link a
+    text-decoration: none
+
+  .follow-data 
+    padding-top: 1rem
+    & a 
+      color: black
+      text-decoration: none
+      &:hover
+        color: black
+        text-decoration: underline
+
+  .following
+    display: inline
+    margin-right: 1rem
+
+  .followers
+    display: inline
+
+  .feedtabs
+    border-bottom: 1px solid rgb(219, 219, 219)
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+
+  .feedtabs a
+    text-decoration: none
+    color: grey
+
+  .feedtabs div
+    text-align: center
+    vertical-align: middle
+    padding-bottom: 15px
+
+  .selected
+    border-bottom: 4px solid #1EAEDB
+    
+  .selected a  
+    color: #1EAEDB
+
+  .tweet__profil_image 
+    margin-top: 1.2rem
+    margin-left: 1.2rem
+
+  .tweet__profil_image  img
+    width: 58px
+    height: 58px
+    border-radius: 50%
+
+  .tweet__info div
+    padding-top: 10px
+    display: inline-block
+
+  .tweet__info_name
+    font-size: 1.8rem
+
+  .tweet__info_username
+    color: grey
+
+  .tweet__message
+    transform: translateY(-2rem)
+    width: 100%
+
+    & p
+      overflow: auto
+      padding-right: 1.5em
+
+  .tweet__opt
+    transform: translateY(-2rem)
+    color: grey
+
+  .tweet__opt span
+    padding-left: 0.5em
+
+  .logo-opt
+    fill: grey
+    justify-content: center
+    height: 2rem
+    transform: translateY(0.5rem)
+
+  .pinned_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .pinned_msg
+    color: rgb(101, 119, 134)
+
+  .retweet_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .retweet_msg
+    color: rgb(101, 119, 134)
+    
+  .logo
+    &-pin
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+    &-rt
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+  .tweet
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+    border-bottom: 1px solid rgb(219, 219, 219)
+
+  .menu
+    padding-top: 2rem
+    & h2
+      color: #1EAEDB
+
+  .menu a
+    text-decoration: none
+    color: black
+    &:hover
+      color: black
+
+
+  .menu li
+    list-style-type: none
+    font-weight: bold
+    font-size: 2rem
+    color: black
+
+
+    &:hover
+      cursor: pointer
+      transform: scale(1.3)
+      transition-timing-function: ease-out
+      transition-duration: 0.2s
+
+    & img
+      height: 2.5rem
+      width: 2.5rem
+      border-radius: 50%
+      transform: translateY(0.5rem)
+      margin-right: 1rem
+
+  .logo-menu
+    margin-right: 1rem
+    height: 2.5rem
+    transform: translateY(0.5rem)
+
+  .menu span
+    visibility: hidden
+
+  .three.columns.test
+    width: 8% !important 
+
+  .three.columns.sea
+    width: 18% !important
+
+  .six.columns
+    width: 60% !important 
+
+  .btn-tweeter
+    display: none
+
+  .tweet__opt a
+    color: rgb(101, 119, 134)
+
+  .tendances
+    margin-top: 90px
+    
+
+@media (min-width: 1200px)
+  .lg-hide
+    display: none
+
+  .fixed
+    position: fixed
+    
+  a
+    cursor: pointer
+
+  .user
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+  .user--banner
+    height: 15em
+    overflow: hidden
+
+  .user--banner img
+    position: relative
+    width: 100%
+
+  .user--info
+    height: 35rem
+    & h2
+      margin: 0px
+      padding: 0px
+      display: inline
+
+    &__profil_img 
+      height: 10em
+      width: 10em
+      overflow: hidden
+      border: 0.5em solid white
+      transform: translate(1em,-7em)
+      border-radius: 50%
+
+    &__profil
+      transform: translateY(-10rem)
+      padding-left: 1em
+
+    &__button
+      transform: translateY(-18rem)
+      padding-right: 1.5em 
+      float: right
+
+      & button
+        border-color: #1EAEDB
+        color: #1EAEDB
+
+  .certified
+    fill: rgba(29,161,242,1.00)
+    height: 2.2rem
+
+    &-sm
+      fill: rgba(29,161,242,1.00)
+      height: 1.4rem
+      transform: translateY(0.2rem)
+
+
+  #profil_img
+    height: 100%
+
+  .bio
+    margin-top: 1rem
+
+  .link p
+    margin: 0px
+    padding: 0px
+    color: grey
+
+  .link a
+    text-decoration: none
+
+  .follow-data 
+    padding-top: 1rem
+    & a 
+      color: black
+      text-decoration: none
+      &:hover
+        color: black
+        text-decoration: underline
+
+  .following
+    display: inline
+    margin-right: 1rem
+
+  .followers
+    display: inline
+
+  .feedtabs
+    border-bottom: 1px solid rgb(219, 219, 219)
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+
+
+  .feedtabs a
+    text-decoration: none
+    color: grey
+
+  .feedtabs div
+    text-align: center
+    vertical-align: middle
+    padding-bottom: 15px
+
+  .selected
+    border-bottom: 4px solid #1EAEDB
+    
+  .selected a  
+    color: #1EAEDB
+
+  .tweet__profil_image 
+    margin-top: 1.2rem
+    margin-left: 1.2rem
+
+  .tweet__profil_image  img
+    width: 58px
+    height: 58px
+    border-radius: 50%
+
+  .tweet__info div
+    padding-top: 10px
+    display: inline-block
+
+  .tweet__info_name
+    font-size: 1.8rem
+
+  .tweet__info_username
+    color: grey
+
+  .tweet__message
+    transform: translateY(-2rem)
+    width: 100%
+
+    & p
+      overflow: auto
+      padding-right: 1.5em
+
+  .tweet__opt
+    transform: translateY(-2rem)
+    color: grey
+
+  .tweet__opt span
+    padding-left: 0.5em
+
+  .logo-opt
+    fill: grey
+    justify-content: center
+    height: 2rem
+    transform: translateY(0.5rem)
+
+  .pinned_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .pinned_msg
+    color: rgb(101, 119, 134)
+
+  .retweet_msg_row
+    padding-top: 1rem
+    padding-left: 5rem
+
+  .retweet_msg
+    color: rgb(101, 119, 134)
+    
+  .logo
+    &-pin
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+    &-rt
+      fill: rgb(101, 119, 134)
+      height: 1.3rem
+
+  .tweet
+    border-right: 1px solid rgb(219, 219, 219)
+    border-left: 1px solid rgb(219, 219, 219)
+    border-bottom: 1px solid rgb(219, 219, 219)
+
+  .menu
+    padding-top: 2rem
+    & h2
+      color: #1EAEDB
+
+  .menu a
+    text-decoration: none
+    color: black
+    &:hover
+      color: black
+
+
+  .menu li
+    list-style-type: none
+    font-weight: bold
+    font-size: 2rem
+    color: black
+
+
+    &:hover
+      cursor: pointer
+      transform: scale(1.3)
+      transition-timing-function: ease-out
+      transition-duration: 0.2s
+
+    & img
+      height: 2.5rem
+      width: 2.5rem
+      border-radius: 50%
+      transform: translateY(0.5rem)
+      margin-right: 1rem
+
+  .logo-menu
+    margin-right: 1rem
+    height: 2.5rem
+    transform: translateY(0.5rem)
+
+  .search-col
+    position: fixed
+    padding-top: 2rem
+
+    & input
+      width: 100% 
+
+  .tweet__opt a
+    color: rgb(101, 119, 134)
+
+  .tendances
+    margin-top: 90px

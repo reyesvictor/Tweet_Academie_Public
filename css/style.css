@@ -1,0 +1,95 @@
+.body--index {
+  background-color: #d7edf0;
+}
+
+.inscription {
+  margin-left: 600px;
+}
+
+.body--connexion {
+  background-color: #b3d6b8;
+}
+
+.connexion {
+  margin-left: 600px;
+}
+
+.body--profil {
+  background-color: #ffd4d4;
+}
+
+#menu {
+  width: 6%;
+  display: block;
+  margin-right: auto;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+@media screen and (min-width: 1200px) {
+  #menu {
+    top: 50px;
+  }
+}
+
+#logo-meetic {
+  width: 35%;
+  display: block;
+  margin-left: 20%;
+  margin-right: auto;
+  position: relative;
+}
+
+#header--menu--ul {
+  display: none;
+}
+
+.header--menu--ul {
+  list-style: none;
+  margin-left: 42%;
+  position: relative;
+  top: -95px;
+  left: 300px;
+}
+
+.menu--li {
+  margin-right: 15px;
+}
+
+.deconnexion {
+  display: block;
+  margin-left: 90%;
+  top: 3%;
+  position: absolute;
+}
+
+.body--home {
+  background-color: brown;
+}
+
+.body--home {
+  color: white;
+}
+
+.section--div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 20px;
+}
+
+.body--search {
+  background-color: #b3b172;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.logo-my_tweet {
+  float: right;
+  margin-right: 1.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
