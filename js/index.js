@@ -26,7 +26,7 @@ $(document).ready(function () {
 		};
 		let data_inscription = data_send_inscription;
 		$.ajax({
-			url: "../tweet_academy/php/handler/access/inscription.php",
+			url: "../php/handler/access/inscription.php",
 			method: "POST",
 			data: { data_inscription },
 			dataType: 'json',
@@ -35,10 +35,10 @@ $(document).ready(function () {
 				if (data_inscription['msg'] == "Votre compte à bien été crée !") {
 					$.ajax({
 						method: 'POST',
-						url: "../tweet_academy/php/handler/access/inscription.php",
+						url: "../php/handler/access/inscription.php",
 						data: { data_send_inscription }, //pass data1 to second request
 						//dataType: 'json',
-						success: window.location.href = "../tweet_academy/php/view/home/home.php",
+						success: window.location.href = "../php/view/home/home.php",
 						// handler if second request succeeds 
 					});
 				}
