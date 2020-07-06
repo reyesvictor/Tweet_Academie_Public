@@ -6,7 +6,6 @@ $(document).ready(function () {
 	//GET AND SHOW ALL TWEETS BY ID ORDER
 	function getAllTweetForHome() {
 		ajaxGet('../../handler/tweet/getHomeTweet.php', 'all').then(all_tweets_for_home => {
-			console.log('all tweets ever', all_tweets_for_home)
 			$('#tweet').text('');
 			displayAllTweets(all_tweets_for_home);
 			if (storage_color) {

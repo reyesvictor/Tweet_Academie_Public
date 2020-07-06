@@ -47,7 +47,7 @@ $idUser = intval($_SESSION['id'][0]['id']); // Id de l'user connecté en int
     </div>
     <!-- COLONNE CENTRE -->
     <div class="six columns">
-        <?php include '../includes/up_tweet_div.php'; ?>
+      <?php include '../includes/up_tweet_div.php'; ?>
 
       <!-- User Profile Information -->
       <span id='user_profile_information'></span>
@@ -57,12 +57,12 @@ $idUser = intval($_SESSION['id'][0]['id']); // Id de l'user connecté en int
         <div class="feedtabs__tweet three columns">
           <a class='color-theme' href="user.php">Tweets</a>
         </div>
-        <div class="feedtabs__tweet_with_replies three columns">
+        <!-- <div class="feedtabs__tweet_with_replies three columns">
           <a href="#">Réponses</a>
         </div>
         <div class="feedtabs__medias three columns">
           <a href="#">Médias</a>
-        </div>
+        </div> -->
         <div class="tabs__likes three columns selected">
           <a class='color-theme' href="like.php">Likes</a>
         </div>
@@ -74,4 +74,5 @@ $idUser = intval($_SESSION['id'][0]['id']); // Id de l'user connecté en int
     <?php include '../includes/right_menu.php'; ?>
   </div>
 </body>
+
 </html>

@@ -93,7 +93,7 @@ $(document).ready(function () {
 			dataType: 'json',
 			success: function (data_connexion) {
 				alert(data_connexion['msg']);
-				if (data_connexion['msg'] == "Connexion réussi") {
+				if (data_connexion['msg'] == "Connexion réussie") {
 					$.ajax({
 						type: 'POST',
 						url: "php/handler/access/connexion.php",

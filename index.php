@@ -43,7 +43,7 @@ if (isset($_SESSION['id'])) {
           <!-- <input type="submit" value="Se connecter"> -->
           <input class="button-primary" type="submit" id='connexion-submit' value="Se connecter">
         </form>
-        <a href="#">Mot de passe oublié ?</a><br><br>
+        <!-- <a href="#">Mot de passe oublié ?</a><br><br> -->
         <button type="button" class="button" id="switch_reg">S'inscrire</button>
       </div>
       <div class="one-half column" id='inscription-div' style="margin-top: 25%">
